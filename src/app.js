@@ -3,7 +3,7 @@ import logger from '@selesterkft/express-logger';
 
 const cors = require('cors');
 
-import { api, docs, ftp, datachange, data } from './routes';
+import { api, docs, data } from './routes';
 import errorHandler from './middlewares/error-handler';
 
 const app = express();
