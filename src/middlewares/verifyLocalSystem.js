@@ -6,7 +6,7 @@ export function verifyLocalSystem(req, res, next) {
     }
     next();
   } catch (e) {
-    e.httpCode = 403;
+    e.status = 403;
     next(e);
   }
 }
